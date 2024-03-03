@@ -19,13 +19,13 @@ before(function() {
   })();
 });
 
-describe("logNums", function() {
-  it("log numbers 1 through `num`", function() {
-    var num = 10;
+describe("logEvenNums", function() {
+  it("log even numbers 0 through `num`", function() {
+    var num = 13;
 
-    logNums(num);
+    logEvenNums(num);
 
-    expect(console.log.calledWith()).to.eql([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    expect(console.log.calledWith()).to.eql([0, 2, 4, 6, 8, 10, 12]);
   });
 });
 
