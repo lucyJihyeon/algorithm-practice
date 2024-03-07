@@ -3,7 +3,7 @@
 var factorial = function(num) {
  let number = [];
  let factorial =1;
-    for (let i = 1; i <= num; i ++)   {
+    for (let i = 2; i <= num; i ++)   {
         number.push(i);
     }
     console.log(number);
