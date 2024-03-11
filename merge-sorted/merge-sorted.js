@@ -1,5 +1,8 @@
 // Write code to merge two sorted arrays into a new sorted array
 
+//because the purpose of this function is to compare two sorted arrays and merge them into a new sorted array, 
+//it serves as merge function in merge sort 
+//O(n) 
 var mergeSorted = function (arr1, arr2) {
     let result = [], i = 0, j = 0;
 
@@ -18,6 +21,8 @@ var mergeSorted = function (arr1, arr2) {
 
 
 //regular merge sort 
+//O(n log n)
+//n (arr.length) and split the array into halves until the length is 1 > log n 
 function mergeSort(arr) {
     if (arr.length <= 1) {
         return arr;
