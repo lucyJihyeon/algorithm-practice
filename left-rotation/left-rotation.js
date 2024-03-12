@@ -6,12 +6,18 @@ const leftRotation = (arr, positions) => {
   let i = 0;
   while (i < positions) {
     let tobeAdded = arr[0];
-    console.log("tobeAdded: ",tobeAdded);
     arr.splice(0, 1);
-    console.log("after splice: ",arr);
     arr.push(tobeAdded);
-    console.log("after push: ",arr);
     i++;
   }
   return arr;
+};
+//second solution using shift()
+const leftRotation = (arr, positions) => {
+  let i = 0;
+  while (i < positions) {
+    let tobeAdded = arr.shift(); // Directly removes the first element and returns it
+    arr.push(tobeAdded); // Adds the removed element to the end
+    i++;
+  }
 };
